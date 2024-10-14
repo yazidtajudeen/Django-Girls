@@ -20,7 +20,7 @@
         <div class="signup-box">
             <h2>Login</h2>
             <p>Hey welcome back login to continue exploring Django girls</p>
-            <form action="" method="POST">
+            <form action="./log.php" method="POST">
                 <div class="input-field">
                     <label for="email"><i class="fas fa-envelope"></i> Email</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email">

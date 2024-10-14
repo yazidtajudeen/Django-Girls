@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +22,7 @@
         <div class="signup-box">
             <h2>Sign Up</h2>
             <p>Create an account to continue using the website</p>
-            <form action="" method="POST">
+            <form action="./Sconf.php" method="POST">
                 <div class="input-field">
                     <label for="username"><i class="fas fa-user"></i> Username</label>
                     <input type="text" id="username" name="username" placeholder="Enter your username">

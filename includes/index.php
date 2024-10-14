@@ -1,20 +1,46 @@
+<?php
+session_start()
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <title>Dashboard</title>
 </head>
 
 <body>
-    <main>
+    <div class="dashboard-container">
 
-    </main>
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="../images/django girls 1.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Dashboard</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
+        <main class="main-content">
+
+            <header>
+                <h1>Welcome <br> <span class="username">
+                        <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest'; ?></span></h1>
+            </header>
+            <footer>
+                <p>@Alpha Yazid Tajuideen BSEM SEM-5/Yrs-3 905003502</p>
+            </footer>
+        </main>
+    </div>
+
+
+
 </body>
 
 </html>
