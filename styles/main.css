@@ -18,6 +18,7 @@ body{
 }
 
 .dashboard-container {
+
     display: flex;
     height: 100vh;
 }
@@ -76,6 +77,7 @@ a:hover{
     transform-origin: 0.5s ease;
 }
 
-a, .active{
+a,.active{
     color: #4A5569;
 }
+

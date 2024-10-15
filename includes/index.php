@@ -28,11 +28,14 @@ session_start()
 
 
         <main class="main-content">
-
             <header>
                 <h1>Welcome <br> <span class="username">
                         <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest'; ?></span></h1>
+
             </header>
+            <section class="info">
+                <h3>Welcome to Django Girls</h3>
+            </section>
             <footer>
                 <p>@Alpha Yazid Tajuideen BSEM SEM-5/Yrs-3 905003502</p>
             </footer>
